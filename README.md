@@ -13,3 +13,5 @@ Here are the rough steps for setting up the environment. This has been tested on
 7. Clone the latest Yolo-V5 repo containing the correct weight file in working directory
 8. Cd into it, and run ```python3 detect.py --weights <weightfile.pt> --source <image.png, or 0 for camera>``` 
 
+### Notes
+- Raspberry Pi 3 Model B v1.2 uses armv7l archetecture, and official builds for the required version of torch and torchvision for armv7l do not exist. The whl files were compiled from source in a Docker container emulating an armv7l architecture using qemu. Trying to build from source directly on a Pi would take several days. See https://ownyourbits.com/2018/06/27/running-and-building-arm-docker-containers-in-x86/ for more information on this process.
