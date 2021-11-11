@@ -16,3 +16,4 @@ Here are the rough steps for setting up the environment. This has been tested on
 
 ### Notes
 - Raspberry Pi 3 Model B v1.2 uses armv7l archetecture, and official builds for the required version of torch and torchvision for armv7l do not exist. The whl files were compiled from source in a Docker container emulating an armv7l architecture using qemu. Trying to build from source directly on a Pi would take several days. See https://ownyourbits.com/2018/06/27/running-and-building-arm-docker-containers-in-x86/ for more information on this process.
+- If you get an error of type ```filename.whl is not a supported wheel on this platform```, check to make sure you have the correct python version instlalled (3.7 in this case)
