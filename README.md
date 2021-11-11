@@ -10,8 +10,8 @@ Here are the rough steps for setting up the environment. This has been tested on
 4. Install other required packages from the list with apt
 5. Clone this repo in working directory and cd into it
 6. Install both the torch and torchvision .whl files from this
-7. Comment out the torch and torchvision lines in requirements.txt and install it with pip
-8. Clone the latest Yolo-V5 repo containing the correct weight file in working directory
+7. Clone the latest Yolo-V5 repo containing the correct weight file in working directory
+8. Comment out the torch and torchvision lines in requirements.txt and install it with pip
 9. Cd into it, and run ```python3 detect.py --weights <weightfile.pt> --source <image.png, or 0 for camera>``` 
 
 ### Notes
