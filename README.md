@@ -33,4 +33,5 @@ Here is an explanation of what stream.sh does:
 Once the stream is running, clone the latest Yolo-V5 repo and run ```python3 detect.py --source 'http://<Pi IP Adress>:8080/?action=stream' --weights YOLOv5-Lite-best.pt --iou-thres 0.3 --conf-thres 0.6 --device-id Pi-Stream --buffer-time 1 --no-mask-frames 10 --show-render-time```. You can get the Pi's IP adress by running ```if-config``` on it.
 
 ### Notes
-The procedure for setting up the mjpg streamer was taken from https://desertbot.io/blog/how-to-stream-the-picamera. You may change the default settings in mjpg-streamer to suit your needs
+- This was tested on a Raspberry Pi 3 Model B v1.2 with a fresh install of Raspbian 10 Buster. If using a different distro, dependency package names may differ.
+- The procedure for setting up the mjpg streamer was taken from https://desertbot.io/blog/how-to-stream-the-picamera. You may change the default settings in mjpg-streamer to suit your needs
