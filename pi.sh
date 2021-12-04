@@ -16,4 +16,4 @@ sed -i 's/opencv-python>=4.1.2/#opencv-python>=4.1.2/g' requirements.txt
 python3 -m pip install -r requirements.txt
 
 ###To start the software
-#python3 detect.py --weights YOLOv5-Lite-best.pt --source 0
+#python3 detect.py --source 'http://<Pi Stream IP Adress>:8080/?action=stream' --weights YOLOv5-Lite-best.pt --iou-thres 0.3 --conf-thres 0.6 --device-id <Camera-ID> --buffer-time 1 --no-mask-frames 10 --show-render-time
